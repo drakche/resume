@@ -1,0 +1,215 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Dragan Stojanović} \\ \vspace{1pt}
+    \small +381642248984 $|$ \href{mailto:stojanovic.dragan.87@gmail.com}{\underline{stojanovic.dragan.87@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/stojanovic-dragan/}{\underline{linkedin.com/in/stojanovic-dragan/}} $|$
+    \href{https://github.com/drakche/}{\underline{github.com/drakche}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Faculty of Organizational Sciences}{Univeristy of Belgrade}
+      {B.SC in Organizational Sciences}{Oct. 2005 -- Apr. 2011}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Software Developer}{Oct. 2024 -- Present}
+      {Constellation DOO}{Belgrade, Serbia}
+      \resumeItemListStart
+        \resumeItem{API development and maintenance of core back end systems on company projects.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Senior Software Developer and Specialized UX/UI Consultant}{Jul. 2020 -- Oct. 2024}
+      {Indata.dev}{New York, NY, USA}
+      \resumeItemListStart
+        \resumeItem{Fullstack software development}
+        \resumeItem{Rapid application prototyping}
+        \resumeItem{UX and UI optimization}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tools Engineer}{Sept. 2019 -- July 2020}
+      {Recogni Inc.}{San Jose, CA, USA}
+      \resumeItemListStart
+        \resumeItem{Development of internal debugging tools for data visualization}
+        \resumeItem{Development of Blender modules}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Full Stack Developer}{Mar. 2016 -- Sept. 2019}
+      {Deploy Inc.} {Belgrade, Serbia}
+      \resumeItemListStart
+        \resumeItem{Web development of modern scalable applications}
+        \resumeItem{Team leader}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Senior Software Developer}{Dec. 2014 -- Mar. 2016}
+      {Ondo Seti} {Belgrade, Serbia}
+      \resumeItemListStart
+        \resumeItem{Web development, software and database modeling}
+        \resumeItem{Development of IoT control web applications}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Senior Software Developer}{Apr. 2014 -- Dec. 2014}
+      {Circle Web Foundry DOO} {Pancevo, Serbia}
+      \resumeItemListStart
+        \resumeItem{Web development}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Software Developer}{Apr. 2013 -- Apr. 2014}
+      {Seavus DOO} {Belgrade, Serbia}
+      \resumeItemListStart
+        \resumeItem{Web development}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Junior Software Developer}{Aug. 2010 -- Mar. 2013}
+      {S\&T Serbia} {Belgrade, Serbia}
+      \resumeItemListStart
+        \resumeItem{Application and web development}
+        \resumeItem{Work on the Republic of Serbia eGovernment portal}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Javascript, Python, \#C, SQL (Postgress, TSQL, MySQL) HTML, CSS/LESS/SCSS} \\
+     \textbf{Frameworks}{: NodeJs, Express, Vue, Angular, React} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, Visual Studio, Yarn} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
